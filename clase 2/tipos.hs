@@ -24,5 +24,9 @@ trd3 (_,_,z) = z
 -- todoMenor: dadas dos ternas de números reales, decide si es cierto que cada coordenada de la primera es menor a la
 -- coordenada correspondiente de la segunda.
 
-todoMenor :: Ord a => (a,a,a) -> (a,a,a) -> Bool
+todoMenor :: (Float,Float,Float) -> (Float,Float,Float)  -> Bool
 todoMenor (x1,y1,z1) (x2,y2,z2) = x1 < x2 && y1 < y2 && z1 < z2
+
+-- Punto 3
+-- posicPrimerPar: dada una terna de enteros, devuelve la posición del primer número par si es que hay alguno, y
+-- devuelve 4 si son todos impares.
