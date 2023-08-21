@@ -103,3 +103,13 @@ suma x y = x + y
 -- suma (mod 4 3) 1.5 = Es falsa, mod da como resultado un int. Por ende int y float no funcionara.
 
 -- suma 0 False = Es falsa, 0 es double, pero false es bool.
+
+
+-- Punto 4
+-- Definir funciones que tengan los siguientes tipos.
+
+f1 :: Int ->Int ->Int ->Int
+f1 x y z = x + z + y
+
+f3 :: (a,b) ->c ->(c,b,a)
+f3 (x,z) y = (y,z,x)
