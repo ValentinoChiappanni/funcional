@@ -30,3 +30,65 @@ todoMenor (x1,y1,z1) (x2,y2,z2) = x1 < x2 && y1 < y2 && z1 < z2
 -- Punto 3
 -- posicPrimerPar: dada una terna de enteros, devuelve la posición del primer número par si es que hay alguno, y
 -- devuelve 4 si son todos impares.
+
+posicPrimerPar :: (Int,Int,Int) -> Int
+posicPrimerPar (x,y,z) | even x = 1
+                       | even y = 2
+                       | even z = 3
+                       | otherwise = 4
+
+
+-- Punto 4
+-- crearPar :: a -> b -> (a, b): crea un par a partir de sus dos componentes dadas por separado (debe funcionar para
+-- elementos de cualquier tipo).
+
+crearPar :: a -> b -> (a, b)
+crearPar x y = (x, y)
+
+
+
+-- Punto 5
+-- invertir :: (a, b) -> (b, a): invierte los elementos del par pasado como parámetro (debe funcionar para elementos de
+-- cualquier tipo).
+
+invertir :: (a, b) -> (b, a)
+invertir (x, y) = (y, x)
+
+
+
+-- Practica 1
+
+-- Punto 1
+
+-- Dar un tipo válido para las siguientes expresiones.
+
+-- 1 + 1.0 = el tipo valido es Float
+
+-- 1/2 = el tipo valido es Float
+
+-- div 1 2 = el tipo valido es Int
+
+-- mod 2 3 == 0 = el tipo valido es Boolean
+
+-- (1, True) = el tipo valido es una tubla int y bool
+
+
+-- Punto 2
+
+-- Dar el tipo de las siguientes funciones.
+
+sucesor :: Num a => a -> a
+sucesor x = x + 1
+
+
+segundo :: a -> b -> b
+segundo _ y = y
+
+suma' :: Num a => (a, a) -> a
+suma' x = fst x + snd x
+
+repetido :: a -> (a, a)
+repetido x = (x, x)
+
+-- Punto 3
+
