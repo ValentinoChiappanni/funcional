@@ -92,3 +92,14 @@ repetido x = (x, x)
 
 -- Punto 3
 
+-- Dada la siguiente función decir cuáles de las expresiones son correctas y cuáles no.
+suma :: Float ->Float ->Float
+suma x y = x + y
+
+-- suma (sqrt 2) 3 =  Es verdadera ya que ambas son float. El 3 es float.
+
+-- suma 2.0 3.0 = Es verdadera, ambas son float.
+
+-- suma (mod 4 3) 1.5 = Es falsa, mod da como resultado un int. Por ende int y float no funcionara.
+
+-- suma 0 False = Es falsa, 0 es double, pero false es bool.
