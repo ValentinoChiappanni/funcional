@@ -114,5 +114,9 @@ f1 x y z = x + z + y
 f2 :: Bool -> a -> a -> a
 f2 x y z = if x then y else z
 
+f2' :: Bool -> a -> a -> a
+f2' x y z | x = y
+         | otherwise = z
+
 f3 :: (a,b) ->c ->(c,b,a)
 f3 (x,z) y = (y,z,x)
