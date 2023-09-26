@@ -27,5 +27,13 @@ todosPares []     = True          -- Caso base: lista vacía, todos los elemento
 todosPares (x:xs) = (even x) && todosPares xs  -- Caso recursivo: verifica si el primer elemento es par y llama a la función con el resto de la lista
 
 todosIguales :: [Int] -> Bool
-todosIguales [] = True
-todosIguales (x:xs) =
+todosIguales []     = True         
+todosIguales [x]    = True          
+todosIguales (x:y:xs) = (x == y) && todosIguales (y:xs) 
+
+
+pertenece :: Eq a => a -> [a] -> Bool
+pertenece _ []  = False    
+pertenece x (y:ys) = (x == y) || pertenece x ys 
+
+
