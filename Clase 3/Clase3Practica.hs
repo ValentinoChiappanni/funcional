@@ -1,9 +1,30 @@
 -- Punto 1
---f(n) = 2n
+-- f(n) = 2n
 
-doble:: Int -> Int
+doble :: Int -> Int
 doble 0 = 0 --D1
-doble n = 2 + doble (n-1) -- D2
+doble n = 2 + doble (n - 1) -- D2
+
+
+
+--a )
+-- f(n) = 2 x n
+-- f(0) = 2 x 0 = 0 = D1   CASO BASE
+
+-- doble (n + 1) = 2 + doble (n+1 - 1)
+-- doble (1 + 1) = 2 + doble (1+1 - 1)
+
+-- doble 2 = 2 + doble (1)
+-- doble 2 = 2 + 2
+-- doble 2 = 4
+
+-- doble 1 = 2 + doble (0)
+-- doble 1 = 2 + 0
+-- doble 1 = 2
+
+-- f(n+1) = 2 + doble (n+1-1) = 
+-- f(1+1) = 2 + doble (1+1-1) = 2
+-- f(1+1) = doble (0) = 0
 
 
 -- f(n) = 3n

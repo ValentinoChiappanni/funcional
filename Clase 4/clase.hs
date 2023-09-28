@@ -1,3 +1,4 @@
+
 -- 1. Decir cuáles de las siguientes expresiones son válidas y dar un tipo válido para ellas.
 -- a) Es valida, ya que es una lista vacia
 -- []
@@ -16,6 +17,8 @@ sumaLista :: [Int] -> Int
 sumaLista []     = 0          -- Caso base: lista vacía, suma es 0
 sumaLista (x:xs) = x + sumaLista xs  -- Caso recursivo: suma el primer elemento y llama a la función con el resto de la lista
 
+sumaLista [] =?= 0 (verdadero por CB)
+sumaLista x:xs 
 
 prodLista :: [Int] -> Int
 prodLista []     = 1           -- Caso base: lista vacía, producto es 1
